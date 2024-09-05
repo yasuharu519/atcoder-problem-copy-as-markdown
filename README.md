@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+# AtCoder problem copy as Markdown
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This Chrome extension allows you to copy AtCoder problem statements in Markdown format, making it easier to paste them into note-taking apps like Obsidian or others.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Adds a "Copy" button to AtCoder problem pages.
+- Copies the problem statement in Markdown format, preserving structure and formatting like math statement.
+- Simplifies the process of using problem statements in external tools.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone this repository and build the extension by running `npm install` and `npm run build`.
+1. Open Chrome and go to chrome://extensions/.
+1. Enable Developer mode by clicking the toggle in the top right.
+1. Click the Load unpacked button and select the folder where you built the extension.
+1. The extension will now be installed and active on AtCoder problem pages.
 
-- Configure the top-level `parserOptions` property like this:
+## Usage
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Navigate to an AtCoder contest problem page (e.g., https://atcoder.jp/contests/*/tasks/*).
+1. You will see a "Copy" button next to the problem statement.
+1. Click the button to copy the problem statement in Markdown format to your clipboard.
+1. Paste the copied content into your note-taking app or any Markdown editor.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Notes
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+This tool is designed for personal use, such as saving problem statements for study or note-taking purposes. Please be aware of AtCoder's [terms of service](https://atcoder.jp/tos?lang=en) regarding use of problem statements.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+By using this tool, you take full responsibility for any actions involving the content of AtCoder problems. Be mindful of the copyright restrictions AtCoder places on problem statements, and use this extension in compliance with their terms.
