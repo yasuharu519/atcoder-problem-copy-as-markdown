@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 const manifest = defineManifest({
   manifest_version: 3,
   name: "AtCoder problem copy as markdown",
-  version: "0.0.1",
+  version: "0.0.2",
   description:
     "Show copy button on AtCoder problem page which copies problem as markdown format",
   icons: {
